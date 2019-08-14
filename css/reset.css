@@ -1,3 +1,4 @@
+/*초기화로 처음 웹페이지를 불러올때 동일한 조건으로 만들어 주는 역할을 함, 향후 유지보수에도 용이함*/
 body,div,p,ul,ol,li,dl,dd,dt,h1,h2,h3,h4,h5,h6,table,tr,th,td,form,fieldset,legend,input,label,textarea,select,button { margin: 0; padding: 0;}
 body,h1,h2,h3,h4,h5,h6 {
     font-size: 12px;
