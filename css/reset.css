@@ -1,0 +1,10 @@
+body,div,p,ul,ol,li,dl,dd,dt,h1,h2,h3,h4,h5,h6,table,tr,th,td,form,fieldset,legend,input,label,textarea,select,button { margin: 0; padding: 0;}
+body,h1,h2,h3,h4,h5,h6 {
+    font-size: 12px;
+    font-family: 돋움",dotum,sans-serif;
+}
+ul, ol, li { list-style: none;}
+img, fieldset { border: none;}
+a { text-decoration: none; color: #333;}
+strong, em { font-weight: normal; font-style: normal;}
+table { border-collapse: collapse;}
