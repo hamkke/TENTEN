@@ -1,0 +1,18 @@
+@font-face {
+     font-family: 'NanumSquare';
+     src: url(../font/nanumsquareb.eot);
+     src:url(../font/nanumsquareb.eot?#iefix) format('embedded-opentype'),
+            url(../font/nanumsquareb.woff) format('woff'),
+            url(../font/nanumsquareb.ttf) format('truetype')
+    }
+
+    @font-face {
+        font-family: 'NanumSquare';
+        src: url(../font/nanumsquarer.eot);
+        src:url(../font/nanumsquarer.eot?#iefix) format('embedded-opentype'),
+               url(../font/nanumsquarer.woff) format('woff'),
+               url(../font/nanumsquarer.ttf) format('truetype')
+       }
+   
+   
+
