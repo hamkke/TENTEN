@@ -11,30 +11,55 @@
     <title>10x10</title>
 </head>
 <body>
+  <!--
+     내 개인적 주석 스타일 
+      [S] header  = header 를 start 합니다.
+      [E] header = header 를 end 합니다.
+    -->
     <div id="wrap">
+        <!-- [S] header -->
         <header id="header">
+            <!-- [S] nav -->
             <nav id="nav">
-                <div id="nav_top" class="box_width">
+              <!-- 하단에 id 는 굳이 필요하지 않는 class명 같음 css에서도 이용되지 않으므로 삭제 -->
+                <div class="inner_content">
                         <!-- 하단에 a tag 부분에는 alt 값이 아닌 title -->
                         <h1 class="logo"><a href="/images/logo.png" title="logo"></a></h1>
-    
-                        <ul class="tmenu">
-                            <li><a href="#">로그인&#47;배송</a></li>
-                            <li><a href="#">알림</a></li>
-                            <li><a href="#">주문&#47;배송</a></li>
-                            <li><a href="#">고객센터</a></li>
-                            <li><a href="#">장바구니</a></li>
+                        <!-- 직관성을 위해 tmenu 대신 menu_top 으로 class 명 변경 -->
+                        <!-- a 태그에는 title 이 필수 입니다. -->
+                        <ul class="menu_top">
+                            <li><a href="#" title="">로그인&#47;배송</a></li>
+                            <li><a href="#" title="">알림</a></li>
+                            <li><a href="#" title="">주문&#47;배송</a></li>
+                            <li><a href="#" title="">고객센터</a></li>
+                            <li><a href="#" title="">장바구니</a></li>
                         </ul>
-    
                         <div class="nav_right">
-                            <ul class="qmenu">
-                                <li><a href="#">NEW</a></li>
-                                <li><a href="#">BEST</a></li>
-                                <li><a href="#">SALE</a></li>
-                                <li><a href="#">이벤트</a></li>
-                                <li><a href="#">브랜드</a></li>
-                            </ul>
+                          <!--
+                             하단에 qmenu를 상단에 meun_~~ 처럼 변경 요망 
+                              이유는 css 를 쓰게되면 서현이 class 사용시 
 
+                              .tmenu {}
+                              .tmenu li {}
+                              .qmenu {}
+                              .qmenu li{}
+                              이런식으로 되지만 앞에 menu가 먼저 오게 하면 
+
+                              .menu_top{}
+                              .menu_top li{}
+                              .menu_q{}
+                              .menu_q li{}
+                              이런식으로 보다 더 통일성이 생기게 됨
+
+                            -->
+                            <ul class="qmenu">
+                              
+                                <li><a href="#" title="">NEW</a></li>
+                                <li><a href="#" title="">BEST</a></li>
+                                <li><a href="#" title="">SALE</a></li>
+                                <li><a href="#" title="">이벤트</a></li>
+                                <li><a href="#" title="">브랜드</a></li>
+                            </ul>
                             <div class="srch_form">
                                 <form action="#">
                                     <fieldset>
@@ -49,132 +74,132 @@
 
                 <div class="gnb">
                     <ul>
-                        <li><a href="#">디자인 문구</a>
+                        <li><a href="#" title="">디자인 문구</a>
                             <div class="lnb1 lnb_group">
                                 <div class="lnb_list1">
                                     <p>다이어리&#47;플래너</p>
                                     <ul>
-                                        <li><a href="#">다이어리</a></li>
-                                        <li><a href="#">오거나이저</a></li>
-                                        <li><a href="#">스케쥴러&#47;플래너</a></li>
-                                        <li><a href="#">캘린더</a></li>
+                                        <li><a href="#" title="">다이어리</a></li>
+                                        <li><a href="#" title="">오거나이저</a></li>
+                                        <li><a href="#" title="">스케쥴러&#47;플래너</a></li>
+                                        <li><a href="#" title="">캘린더</a></li>
                                     </ul>
                                 </div>
 
                                 <div class="lnb_list2">
                                     <p>노트&#47;메모지</p>
                                     <ul>
-                                        <li><a href="#">베이직 노트</a></li>
-                                        <li><a href="#">하드커버 노트</a></li>
-                                        <li><a href="#">바인더&#47;6공 노트</a></li>
-                                        <li><a href="#">스프링 노트</a></li>
-                                        <li><a href="#">포켓노트</a></li>
-                                        <li><a href="#">독서노트</a></li>
-                                        <li><a href="#">노트패드</a></li>
-                                        <li><a href="#">수첩</a></li>
-                                        <li><a href="#">메모지</a></li>
-                                        <li><a href="#">점착메모지</a></li>
+                                        <li><a href="#" title="">베이직 노트</a></li>
+                                        <li><a href="#" title="">하드커버 노트</a></li>
+                                        <li><a href="#" title="">바인더&#47;6공 노트</a></li>
+                                        <li><a href="#" title="">스프링 노트</a></li>
+                                        <li><a href="#" title="">포켓노트</a></li>
+                                        <li><a href="#" title="">독서노트</a></li>
+                                        <li><a href="#" title="">노트패드</a></li>
+                                        <li><a href="#" title="">수첩</a></li>
+                                        <li><a href="#" title="">메모지</a></li>
+                                        <li><a href="#" title="">점착메모지</a></li>
                                     </ul>
                                 </div>
 
                                 <div class="lnb_list3">
                                     <p>데코레이션</p>
                                     <ul>
-                                        <li><a href="#">스탬프</a></li>
-                                        <li><a href="#">스티커</a></li>
-                                        <li><a href="#">테이프&#47;다이모</a></li>
-                                        <li><a href="#">테이프 브랜드 샵</a></li>
-                                        <li><a href="#">모양펀치</a></li>
-                                        <li><a href="#">선물 포장</a></li>
-                                        <li><a href="#">장식오너먼트</a></li>
-                                        <li><a href="#">포스터</a></li>
-                                        <li><a href="#">뱃지&#47;와펜</a></li>
+                                        <li><a href="#" title="">스탬프</a></li>
+                                        <li><a href="#" title="">스티커</a></li>
+                                        <li><a href="#" title="">테이프&#47;다이모</a></li>
+                                        <li><a href="#" title="">테이프 브랜드 샵</a></li>
+                                        <li><a href="#" title="">모양펀치</a></li>
+                                        <li><a href="#" title="">선물 포장</a></li>
+                                        <li><a href="#" title="">장식오너먼트</a></li>
+                                        <li><a href="#" title="">포스터</a></li>
+                                        <li><a href="#" title="">뱃지&#47;와펜</a></li>
                                     </ul>
                                 </div>
 
                                 <div class="lnb_list4">
                                     <p>포토앨범&#47;레코드북</p>
                                     <ul>
-                                        <li><a href="#">앨범</a></li>
-                                        <li><a href="#">미니앨범</a></li>
-                                        <li><a href="#">포토박스</a></li>
-                                        <li><a href="#">티켓&#47;영화앨범</a></li>
-                                        <li><a href="#">출산&#47;임신앨범</a></li>
-                                        <li><a href="#">스크랩북</a></li>
-                                        <li><a href="#">기타 레코드 북</a></li>
-                                        <li><a href="#">인화 포토북&#47;동영상</a></li>
+                                        <li><a href="#" title="">앨범</a></li>
+                                        <li><a href="#" title="">미니앨범</a></li>
+                                        <li><a href="#" title="">포토박스</a></li>
+                                        <li><a href="#" title="">티켓&#47;영화앨범</a></li>
+                                        <li><a href="#" title="">출산&#47;임신앨범</a></li>
+                                        <li><a href="#" title="">스크랩북</a></li>
+                                        <li><a href="#" title="">기타 레코드 북</a></li>
+                                        <li><a href="#" title="">인화 포토북&#47;동영상</a></li>
                                     </ul>
                                 </div>
 
                                 <div class="lnb_list5">
-                                    <p><a href="#">필기류&#47;펜 케이스</a></p>
-                                    <p><a href="#">카드&#47;편지&#47;봉투</a></p>
-                                    <p><a href="#">파일링&#47;바인더</a></p>
-                                    <p><a href="#">오피스 용품</a></p>
-                                    <p><a href="#">데스크 정리&#47;보관</a></p>
-                                    <p><a href="#">해외디자인문구</a></p>
-                                    <p><a href="#">캐릭터 문구</a></p>
-                                    <p><a href="#">미술도구</a></p>
-                                    <p><a href="#">BOOK</a></p>
-                                    <p><a href="#">아티스트 굿즈</a></p>
-                                    <p class="lnb_list_sale"><a href="#">SALE</a></p>
-                                    <p class="lnb_list_evt"><a href="#">EVENT</a></p>
+                                    <p><a href="#" title="">필기류&#47;펜 케이스</a></p>
+                                    <p><a href="#" title="">카드&#47;편지&#47;봉투</a></p>
+                                    <p><a href="#" title="">파일링&#47;바인더</a></p>
+                                    <p><a href="#" title="">오피스 용품</a></p>
+                                    <p><a href="#" title="">데스크 정리&#47;보관</a></p>
+                                    <p><a href="#" title="">해외디자인문구</a></p>
+                                    <p><a href="#" title="">캐릭터 문구</a></p>
+                                    <p><a href="#" title="">미술도구</a></p>
+                                    <p><a href="#" title="">BOOK</a></p>
+                                    <p><a href="#" title="">아티스트 굿즈</a></p>
+                                    <p class="lnb_list_sale"><a href="#" title="">SALE</a></p>
+                                    <p class="lnb_list_evt"><a href="#" title="">EVENT</a></p>
                                 </div>
                             </div><!--/lnb_group-->
                         </li>
-                        <li><a href="#">디지털&#47;핸드폰</a>
+                        <li><a href="#" title="">디지털&#47;핸드폰</a>
                             <div class="lnb2 lnb_group">
                                 <div class="lnb_list1">
                                     <p>애플케이스</p>
                                     <ul>
-                                        <li><a href="#">아이폰XR 케이스</a></li>
-                                        <li><a href="#">아이폰 XR MAX 케이스</a></li>
-                                        <li><a href="#">아이폰X&#47;XS 케이스</a></li>
-                                        <li><a href="#">아이폰8 케이스</a></li>
-                                        <li><a href="#">아이폰8+ 케이스</a></li>
-                                        <li><a href="#">아이폰7 케이스</a></li>
-                                        <li><a href="#">아이폰7+ 케이스</a></li>
-                                        <li><a href="#">아이폰6&#47;6S 케이스</a></li>
-                                        <li><a href="#">아이폰6+&#47;6S+ 케이스</a></li>
-                                        <li><a href="#">아이폰SE&#47;5&#47;5S 케이스</a></li>
+                                        <li><a href="#" title="">아이폰XR 케이스</a></li>
+                                        <li><a href="#" title="">아이폰 XR MAX 케이스</a></li>
+                                        <li><a href="#" title="">아이폰X&#47;XS 케이스</a></li>
+                                        <li><a href="#" title="">아이폰8 케이스</a></li>
+                                        <li><a href="#" title="">아이폰8+ 케이스</a></li>
+                                        <li><a href="#" title="">아이폰7 케이스</a></li>
+                                        <li><a href="#" title="">아이폰7+ 케이스</a></li>
+                                        <li><a href="#" title="">아이폰6&#47;6S 케이스</a></li>
+                                        <li><a href="#" title="">아이폰6+&#47;6S+ 케이스</a></li>
+                                        <li><a href="#" title="">아이폰SE&#47;5&#47;5S 케이스</a></li>
                                     </ul>
                                 </div>
 
                                 <div class="lnb_list2">
                                     <p>갤럭시 케이스</p>
                                     <ul>
-                                        <li><a href="#">갤럭시 노트10&#47;10+ 케이스</a></li>
-                                        <li><a href="#">갤럭시 S10 5G 케이스</a></li>
-                                        <li><a href="#">갤럭시 S10&#47;S10+ 케이스</a></li>
-                                        <li><a href="#">갤럭시 노트9 케이스</a></li>
-                                        <li><a href="#">갤럭시 S9&#47;S9+ 케이스</a></li>
-                                        <li><a href="#">갤럭시S8&#47;S8+ 케이스</a></li>
-                                        <li><a href="#">갤럭시 노트8 케이스</a></li>
-                                        <li><a href="#">갤럭시S7&#47;엣지 케이스</a></li>
-                                        <li><a href="#">갤럭시노트7 케이스</a></li>
-                                        <li><a href="#">갤럭시노트 엣지 케이스</a></li>
+                                        <li><a href="#" title="">갤럭시 노트10&#47;10+ 케이스</a></li>
+                                        <li><a href="#" title="">갤럭시 S10 5G 케이스</a></li>
+                                        <li><a href="#" title="">갤럭시 S10&#47;S10+ 케이스</a></li>
+                                        <li><a href="#" title="">갤럭시 노트9 케이스</a></li>
+                                        <li><a href="#" title="">갤럭시 S9&#47;S9+ 케이스</a></li>
+                                        <li><a href="#" title="">갤럭시S8&#47;S8+ 케이스</a></li>
+                                        <li><a href="#" title="">갤럭시 노트8 케이스</a></li>
+                                        <li><a href="#" title="">갤럭시S7&#47;엣지 케이스</a></li>
+                                        <li><a href="#" title="">갤럭시노트7 케이스</a></li>
+                                        <li><a href="#" title="">갤럭시노트 엣지 케이스</a></li>
                                     </ul>
                                 </div>
 
                                 <div class="lnb_list3">
                                     <p>스마트기기 주변기기</p>
                                     <ul>
-                                        <li><a href="#">IoT&#47;생활</a></li>
-                                        <li><a href="#">포토 주변기기</a></li>
-                                        <li><a href="#">거치대&#47;홀더</a></li>
-                                        <li><a href="#">휴대용 베터리</a></li>
-                                        <li><a href="#">충전 주변기기</a></li>
-                                        <li><a href="#">애플전용 주변기기</a></li>
-                                        <li><a href="#">기타 주변기기</a></li>
+                                        <li><a href="#" title="">IoT&#47;생활</a></li>
+                                        <li><a href="#" title="">포토 주변기기</a></li>
+                                        <li><a href="#" title="">거치대&#47;홀더</a></li>
+                                        <li><a href="#" title="">휴대용 베터리</a></li>
+                                        <li><a href="#" title="">충전 주변기기</a></li>
+                                        <li><a href="#" title="">애플전용 주변기기</a></li>
+                                        <li><a href="#" title="">기타 주변기기</a></li>
                                     </ul>
                                 </div>
 
                                 <div class="lnb_list4">
                                     <p>PC&#47;노트북 주변기기</p>
                                     <ul>
-                                        <li><a href="#">PC&#47;노트북 주변기기</a></li>
-                                        <li><a href="#">PC&#47;노트북 악세서리</a></li>
-                                        <li><a href="#">가방&#47;파우치</a></li>
+                                        <li><a href="#" title="">PC&#47;노트북 주변기기</a></li>
+                                        <li><a href="#" title="">PC&#47;노트북 악세서리</a></li>
+                                        <li><a href="#" title="">가방&#47;파우치</a></li>
                                     </ul>
                                 </div>
 
@@ -187,69 +212,69 @@
                                     <p>브랜드 케이스</p>
                                     <p>스마트폰 케이스</p>
                                     <p>BOOK</p>
-                                    <p class="lnb_list_sale"><a href="#">SALE</a></p>
-                                    <p class="lnb_list_evt"><a href="#">EVENT</a></p>
+                                    <p class="lnb_list_sale"><a href="#" title="">SALE</a></p>
+                                    <p class="lnb_list_evt"><a href="#" title="">EVENT</a></p>
                                 </div>
                             </div><!--/lnb_group-->
                         </li>
-                        <li><a href="#">가구&#47;수납</a>
+                        <li><a href="#" title="">가구&#47;수납</a>
                             <div class="lnb3 lnb_group">
                                 <div class="lnb_list1">
                                     <p>수납&#47;정리</p>
                                     <ul>
-                                        <li><a href="#">옷&#47;이불수납</a></li>
-                                        <li><a href="#">바구니&#47;박스</a></li>
-                                        <li><a href="#">아이템정리</a></li>
-                                        <li><a href="#">선반&#47;수납장</a></li>
-                                        <li><a href="#">데스크&#47;책상수납</a></li>
+                                        <li><a href="#" title="">옷&#47;이불수납</a></li>
+                                        <li><a href="#" title="">바구니&#47;박스</a></li>
+                                        <li><a href="#" title="">아이템정리</a></li>
+                                        <li><a href="#" title="">선반&#47;수납장</a></li>
+                                        <li><a href="#" title="">데스크&#47;책상수납</a></li>
                                     </ul>
                                 </div>
 
                                 <div class="lnb_list2">
                                     <p>디자인 체어</p>
                                     <ul>
-                                        <li><a href="#">컴포트체어&#47;암체어</a></li>
-                                        <li><a href="#">스툴</a></li>
-                                        <li><a href="#">우드체어</a></li>
-                                        <li><a href="#">패브릭&#47;가죽체어</a></li>
-                                        <li><a href="#">플라스틱체어</a></li>
-                                        <li><a href="#">철제체어</a></li>
-                                        <li><a href="#">투명체어</a></li>
-                                        <li><a href="#">바체어</a></li>
-                                        <li><a href="#">오피스체어</a></li>
-                                        <li><a href="#">빈백소파</a></li>
+                                        <li><a href="#" title="">컴포트체어&#47;암체어</a></li>
+                                        <li><a href="#" title="">스툴</a></li>
+                                        <li><a href="#" title="">우드체어</a></li>
+                                        <li><a href="#" title="">패브릭&#47;가죽체어</a></li>
+                                        <li><a href="#" title="">플라스틱체어</a></li>
+                                        <li><a href="#" title="">철제체어</a></li>
+                                        <li><a href="#" title="">투명체어</a></li>
+                                        <li><a href="#" title="">바체어</a></li>
+                                        <li><a href="#" title="">오피스체어</a></li>
+                                        <li><a href="#" title="">빈백소파</a></li>
                                     </ul>
                                 </div>
 
                                 <div class="lnb_list3">
                                     <p>홈오피스가구</p>
                                     <ul>
-                                        <li><a href="#">책상</a></li>
-                                        <li><a href="#">2인용 책상</a></li>
-                                        <li><a href="#">각도조절&#47;높이조절 책상</a></li>
-                                        <li><a href="#">오피스세트</a></li>
-                                        <li><a href="#">오피스체어</a></li>
-                                        <li><a href="#">책장&#47;수납장</a></li>
-                                        <li><a href="#">서랍장</a></li>
-                                        <li><a href="#">캐비넷</a></li>
-                                        <li><a href="#">북선반&#47;벽선반</a></li>
-                                        <li><a href="#">공간박스</a></li>
+                                        <li><a href="#" title="">책상</a></li>
+                                        <li><a href="#" title="">2인용 책상</a></li>
+                                        <li><a href="#" title="">각도조절&#47;높이조절 책상</a></li>
+                                        <li><a href="#" title="">오피스세트</a></li>
+                                        <li><a href="#" title="">오피스체어</a></li>
+                                        <li><a href="#" title="">책장&#47;수납장</a></li>
+                                        <li><a href="#" title="">서랍장</a></li>
+                                        <li><a href="#" title="">캐비넷</a></li>
+                                        <li><a href="#" title="">북선반&#47;벽선반</a></li>
+                                        <li><a href="#" title="">공간박스</a></li>
                                     </ul>
                                 </div>
 
                                 <div class="lnb_list4">
                                     <p>침실가구</p>
                                     <ul>
-                                        <li><a href="#">침대세트</a></li>
-                                        <li><a href="#">침대</a></li>
-                                        <li><a href="#">매트리스</a></li>
-                                        <li><a href="#">화장대</a></li>
-                                        <li><a href="#">거울</a></li>
-                                        <li><a href="#">협탁</a></li>
-                                        <li><a href="#">옷장</a></li>
-                                        <li><a href="#">오픈옷장</a></li>
-                                        <li><a href="#">서랍장</a></li>
-                                        <li><a href="#">파티션</a></li>
+                                        <li><a href="#" title="">침대세트</a></li>
+                                        <li><a href="#" title="">침대</a></li>
+                                        <li><a href="#" title="">매트리스</a></li>
+                                        <li><a href="#" title="">화장대</a></li>
+                                        <li><a href="#" title="">거울</a></li>
+                                        <li><a href="#" title="">협탁</a></li>
+                                        <li><a href="#" title="">옷장</a></li>
+                                        <li><a href="#" title="">오픈옷장</a></li>
+                                        <li><a href="#" title="">서랍장</a></li>
+                                        <li><a href="#" title="">파티션</a></li>
                                     </ul>
                                 </div>
 
@@ -264,15 +289,17 @@
                                     <p>아웃도어가구</p>
                                     <p>DIY 가구&#47;도구</p>
                                     <p>BOOK</p>
-                                    <p class="lnb_list_sale"><a href="#">SALE</a></p>
-                                    <p class="lnb_list_evt"><a href="#">EVENT</a></p>
+                                    <p class="lnb_list_sale"><a href="#" title="">SALE</a></p>
+                                    <p class="lnb_list_evt"><a href="#" title="">EVENT</a></p>
                                 </div>
                             </div><!--/lnb_group-->
                         </li>
                     </ul>
                 </div><!--/gnb-->
             </nav>
+            <!-- [E] nav -->
         </header>
+        <!-- [E] header -->
     </div><!--/wrap-->
 </body>
 </html>

@@ -4,6 +4,13 @@
   - 하단에 #header 부분은 font css 이외의 css 임 해당내용은 common 부분으로 이동
   font는 font-face 등 정말 폰트 정보만 들어가있어야함
 */
+/* 
+구글에서 폰트 가져오는건 되도록이면 지양해야함 
+왜냐하면 구글사이트가 점검일 경우 (그런경우는 거진 못봤지만 혹시나) 그런경우가 생길 경우 폰트가 
+로드가 되지않음 
+*/
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap");
+
 @font-face {
   font-family: "NanumSquare";
   src: url("../font/nanumsquareb.eot");
@@ -20,4 +27,4 @@
     url("../font/nanumsquarer.ttf") format("truetype");
 }
 
-@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap");
+
