@@ -1,6 +1,27 @@
 .box_width {width:1140px; margin:0 auto;}
-.clear_fix {}
+.clearfix:after{content:''; display:block; clear:both; width:0; height:0; overflow:hidden;}
+.hide{display:none;}
 #wrap {min-width:1200px;}
-#header {height:126px; background-color:#f22727;}
-#nav_top {height:86px; }
-.gnb {background-color:#fff; color:#555;}
+#header {height:126px;}
+#nav{height:86px; background-color:#f22727;}
+.gnb {height:40px;background-color:rgb(128, 80, 80); color:#555;}
+
+
+
+.logo{float:left;width:160px;height:28px;background:url(../images/logo.png)  no-repeat;}
+.logo a {display:block; width:160px; height:28px;}
+
+.tmenu {float: right;}
+.tmenu li{float:left; padding:0 0 10px 13px;}
+.tmenu li :nth-child(1):after {
+    content:'';
+    display:inline-block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:1px;
+    height:7px; 
+    background-color:coral;
+    vertical-align:top;
+}
+.tmenu li a{color:#fff; font-weight:11px;}
