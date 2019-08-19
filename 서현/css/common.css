@@ -12,20 +12,29 @@
 .logo a {display:block; height:28px;}
 
 .nav_top {width:1140px; height:40px;}
-.menu_top {float:right; padding:12px 0 15px;}
+.menu_top {float:right; padding:12px 0 14px;}
 .menu_top:after {display:block; overflow:hidden; width:0; height:0; clear:both; content:'';}
 .menu_top li {float:left; position:relative; padding-left:13px; line-height:12px;}
 .menu_top li:first-child {margin-right:14px;}
 .menu_top li:first-child:after {display:block; position:absolute; top:4px; left:116px; width:1px; height:7px; background-color:#F77D7D; content:'';}
 .menu_top li a {color:#fff; font-size:11px;}
+.menu_top_cart .cart_ico {display:inline-block; overflow:hidden; width:8px; height:10px; background:url(../images/sp_icon.png) -152px 0 no-repeat; text-indent:-9999px; vertical-align: middle;}
+.menu_top_cart  .cart_arrow_button {display:inline-block; overflow:hidden; width:6px; height:4px; background:url(../images/arrow_bottom.png) no-repeat; }
+
+
+
+
+
+
 
 .nav_right {float:right;}
 .nav_right:after {display:block; overflow:hidden; width:0; height:0; clear:both; content:'';} 
 .menu_q {float:left;}
-.menu_q li {float:left; padding-right:10px; font-family: 'Roboto', sans-serif;}
+.menu_q li {float:left; padding-right:10px; font-family: 'Roboto', sans-serif; line-height:29px;}
 .menu_q li a {color:#fff; font-size:17px;}
-.menu_q .menu_q_small a {font-family:"Nanum Gothic", sans-serif; font-size:14px;}
+.menu_q .menu_q_small a {font-family:"Nanum Gothic", sans-serif; font-size:14px; font-weight:700; line-height:25px;}
 
-.srch_form {float:right; width:202px; height:30px; background-color:#fff; border-radius:15px;}
-.srch_form input {display:block; width:100%; height:29px; margin:0; padding:0 44px 0 14px; border-style: none; border-radius:15px;}
+.srch_form {float:right; width:202px; height:30px; padding:0 44px 0 14px; background-color:#fff; border-radius:15px;}
+.srch_form input {display:block; width:100%; height:29px; margin:0; border-style: none; border-radius:15px;}
+.srch_form input:focus { outline: none; }
 .srch_form #srch_txt {color:#666;}
