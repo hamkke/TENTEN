@@ -1,29 +1,31 @@
-.box_width {width:1140px; margin:0 auto;}
-.clearfix:after{content:''; display:block; clear:both; width:0; height:0; overflow:hidden;}
-.hide{display:none;}
-/* css 내에도 분기를 잡아 주는 것이 좋다 */
+/*common*/
+.inner_content {width:1140px; margin:0 auto;}
+.screen_out {display:block; overflow:hidden; width:0; height:0; text-indent:-9999px;}
 
-/* header */
+/*header*/
 #wrap {min-width:1200px;}
-#header {height:126px;font-family: "Nanum Gothic", sans-serif;}
-#nav{height:86px; background-color:#f22727;}
+#header {height:126px; font-family:"Nanum Gothic", sans-serif;}
+#nav {height:86px; background-color:#f22727;}
 
-.gnb {height:40px;background-color:rgb(128, 80, 80); color:#555;}
+.logo {float:left; overflow:hidden; width:160px; height:28px; padding-top:29px; background:url('../images/logo.png') 0 29px no-repeat;}
+.logo:after {display:block; overflow:hidden; width:0; height:0; clear:both; content:'';}
+.logo a {display:block; height:28px;}
 
-.logo{float:left;width:160px;height:28px;background:url(../images/logo.png)  no-repeat;}
-.logo a {display:block; width:160px; height:28px;}
+.nav_top {width:1140px; height:40px;}
+.menu_top {float:right; padding:12px 0 15px;}
+.menu_top:after {display:block; overflow:hidden; width:0; height:0; clear:both; content:'';}
+.menu_top li {float:left; position:relative; padding-left:13px; line-height:12px;}
+.menu_top li:first-child {margin-right:14px;}
+.menu_top li:first-child:after {display:block; position:absolute; top:4px; left:116px; width:1px; height:7px; background-color:#F77D7D; content:'';}
+.menu_top li a {color:#fff; font-size:11px;}
 
-.tmenu {float: right;}
-.tmenu li{float:left; padding:0 0 10px 13px;}
-.tmenu li :nth-child(1):after {
-    content:'';
-    display:inline-block;
-    position:absolute;
-    top:0;
-    left:0;
-    width:1px;
-    height:7px; 
-    background-color:coral;
-    vertical-align:top;
-}
-.tmenu li a{color:#fff; font-weight:11px;}
+.nav_right {float:right;}
+.nav_right:after {display:block; overflow:hidden; width:0; height:0; clear:both; content:'';} 
+.menu_q {float:left;}
+.menu_q li {float:left; padding-right:10px; font-family: 'Roboto', sans-serif;}
+.menu_q li a {color:#fff; font-size:17px;}
+.menu_q .menu_q_small a {font-family:"Nanum Gothic", sans-serif; font-size:14px;}
+
+.srch_form {float:right; width:202px; height:30px; background-color:#fff; border-radius:15px;}
+.srch_form input {display:block; width:100%; height:29px; margin:0; padding:0 44px 0 14px; border-style: none; border-radius:15px;}
+.srch_form #srch_txt {color:#666;}
