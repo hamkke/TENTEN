@@ -20,4 +20,12 @@
     url(../font/nanumsquarer.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Roboto";
+  src:url(../font/roboto-v20-latin-regular.eot);
+  src:url(../font/roboto-v20-latin-regular.eot?#iefix) format("emmbedded-opentype"),
+        url(../font/roboto-v20-latin-regular.woff) format("woff"),
+        url(../font/roboto-v20-latin-regular.ttf) format("truetype");
+}
+
 @import url("https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap");
