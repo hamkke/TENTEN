@@ -25,7 +25,8 @@
 .nav_right:after {display:block; overflow:hidden; width:0; height:0; clear:both; content:'';}
 .menu_q{display: inline-block;vertical-align: middle;}
 .menu_q:after {display:block; overflow:hidden; width:0; height:0; clear:both; content:'';}
-.menu_q li {display: inline-block; padding-right:10px; font-family: 'Roboto', sans-serif; line-height:29px;}
+.menu_q li {display: inline-block;  font-family: 'Roboto', sans-serif; line-height:29px;}
+.menu_q li + li {padding-left:10px;}
 .menu_q li a {color:#fff; font-size:17px;}
 .menu_q li a:hover {color:#fbbebe;}
 .menu_q .menu_q_small a {font-family:"Nanum Gothic", sans-serif; font-size:14px; font-weight:700; line-height:25px;}
@@ -40,3 +41,15 @@
 /*gnb*/
 .gnb .lnb_group {display:none;}
 .gnb .inner_content li{display: inline-block;}
+
+/*  
+
+선택자 종류 
+    -첫번째 
+        :first-child(우선적으로 사용) :nth-child(1)
+    - 두번째 세번째 등등
+        :nth-child(2), :nth-child(3)
+    -마지막        
+    :last-child(우선적으로 사용)/ nth-child(~~s)
+    
+*/
