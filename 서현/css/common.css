@@ -1,12 +1,15 @@
+body {background-color: antiquewhite;}
 /*common*/
 .inner_content {width:1140px; margin:0 auto;}
 .screen_out {display:block; overflow:hidden; width:0; height:0; text-indent:-9999px;}
+.ico_hot {overflow:hidden; position:absolute; width:12px; height:12px; background:url(../images/sp_icon.png) no-repeat; text-indent:-9999px; content:'';}
+.ico_new {overflow:hidden; position:absolute; width:12px; height:12px; background:url(../images/sp_icon.png) -22px -17px no-repeat; text-indent:-9999px; content:'';}
 
 /*header*/
 .wrap {min-width:1200px;}
 .header {position:relative; height:126px; font-family:"Nanum Gothic", sans-serif;}
 .nav {height:126px; background-color:#f22727;}
-.nav .inner_content {height:86px;}
+.nav > .inner_content {height:86px;}
 
 .logo {position:absolute; width:160px; height:28px; padding-top:29px; background:url('../images/logo.png') 0 29px no-repeat;}
 .logo:after {display:block; overflow:hidden; width:0; height:0; clear:both; content:'';}
@@ -26,7 +29,7 @@
 .nav_right:after {display:block; overflow:hidden; width:0; height:0; clear:both; content:'';}
 .menu_q {display:inline-block; padding-right:10px;vertical-align:middle;}
 .menu_q:after {display:block; overflow:hidden; width:0; height:0; clear:both; content:'';}
-.menu_q li {display:inline-block;font-family: 'Roboto', sans-serif; line-height:29px;}
+.menu_q li {display:inline-block; font-family:'Roboto', sans-serif; line-height:29px;}
 .menu_q li + li {padding-left:10px;}
 .menu_q li a {color:#fff; font-size:17px;}
 .menu_q li a:hover {color:#fbbebe;}
@@ -39,14 +42,35 @@
 .srch_btn {overflow:hidden; position:absolute; top:8px; right:40px; width:14px; height:14px; background:url(../images/sp_icon.png)  -108px 0 no-repeat; text-indent:-9999px;}
 
 /*gnb*/
-.gnb_inner {width: 1140px; margin: 0 auto;}
-.gnb {height: 40px; background-color: rgb(141, 141, 141);}
+.gnb {height: 40px; background-color:#fff;;}
 .gnb > li {display:inline-block; position:relative; padding:0 9px; line-height:40px;}
 .gnb > li > a {display:inline-block;}
-.gnb li:last-child::before {display:inline-block; width:1px; height:7px; margin-right:18px; background-color:#ccc; content:'';}
+.gnb .gnb_line::before {display:inline-block; width:1px; height:7px; margin-right:18px; background-color:#ccc; content:'';}
 
-.gnb_inner {position:relative;}
-.gnb_inner .list_sub{font-size: 0;}
-.gnb_inner .list_sub > li{display: inline-block;padding:0 10px;}
-.gnb_inner .list_sub > li > a{display: inline-block;font-size:12px;line-height:40px;}
-.gnb_inner .lnb_group {display:inline-block; position:absolute; top:40px; left:0; width:1140px; height:320px; border:1px solid #000;}
+.gnb_inner {position:relative; width: 1140px; margin: 0 auto; display:none;}
+.gnb_inner .list_sub {font-size: 0;}
+.gnb_inner .list_sub > li {display: inline-block ;padding:0 9px;}
+.gnb_inner .list_sub > li > a {display: inline-block; font-size:12px; line-height:40px;}
+.gnb_inner .lnb_group {display:inline-block; position:absolute; top:40px; left:0; padding:16px 0 23px; background-color: #fff; border-top:1px solid #f5f5f5;}
+.lnb_list {display:inline-block; width:154px; padding:0 20px; font-size:12px; background-color:#fff; vertical-align: top; border-left:1px solid #eee;}
+.lnb_list:first-child {border:none;}
+.lnb_list p {line-height:2; font-size:13px; font-weight:bold;}
+.lnb_list p:hover {color:#ff3131;}
+.lnb_list li {line-height:26px;}
+.lnb_list li:hover {background-color:#f2f2f2;}
+.lnb_list li a {display:block;}
+.lnb_list_bold {font-weight:bold;}
+.lnb_list .lnb_list_sale a {color:#ff3131;}
+.lnb_list .lnb_list_evt a {color:#3f75ff;}
+
+ /*visual*/
+ .container {width:100%;}
+ .visual {background:url(../images/mainvisual.jpg) no-repeat;}
+ .visual_inner {width:1140px; margin:0 auto;}
+ .visual_wrap {height:600px; position:relative;}
+ .visual_h_group {position:relative; top:50%; transform:translateY(-50%);}
+ .visual_h_group .visual_h {display:inline-block;position:relative; margin-bottom:16px; color:#000;font-size:40px; font-family:'Roboto', sans-serif; font-weight:600;}
+ .visual_h_group .h_percent {display:inline-block; margin-left:11px; height:24px; padding:0 8px; border-radius:12px; background-color:#ff3131; color:#fff; vertical-align:middle;}
+ .visual_h_group .h_coupon {display:inline-block; margin-left:10px; height:24px; padding:0 8px; border-radius:12px; background-color:#00b160; color:#fff; vertical-align:middle;}
+ .visual_h_group b {font-size:13px; line-height:24px; vertical-align:top;}
+ .visual_h_group .visual_dsc {color:#0d0d0d; font-size:15px; font-family:"Nanum Gothic", sans-serif;}
