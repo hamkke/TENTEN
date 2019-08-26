@@ -67,10 +67,17 @@ body {background-color: antiquewhite;}
  .container {width:100%;}
  .visual {background:url(../images/mainvisual.jpg) no-repeat;}
  .visual_inner {width:1140px; margin:0 auto;}
- .visual_wrap {height:600px; position:relative;}
- .visual_h_group {position:relative; top:50%; transform:translateY(-50%);}
- .visual_h_group .visual_h {display:inline-block;position:relative; margin-bottom:16px; color:#000;font-size:40px; font-family:'Roboto', sans-serif; font-weight:600;}
- .visual_h_group .h_percent {display:inline-block; margin-left:11px; height:24px; padding:0 8px; border-radius:12px; background-color:#ff3131; color:#fff; vertical-align:middle;}
- .visual_h_group .h_coupon {display:inline-block; margin-left:10px; height:24px; padding:0 8px; border-radius:12px; background-color:#00b160; color:#fff; vertical-align:middle;}
+ .visual_wrap {position:relative; height:600px; text-align:left;}
+ .visual_h_group {position:relative; top:50%; transform:translateY(-72px);}
+ .visual_h_group .visual_h {display:inline-block; margin-bottom:16px; color:#000;font-size:40px; font-family:'Roboto', sans-serif; font-weight:600;}
+ .visual_h_group .h_percent {display:inline-block; height:24px; padding:0 8px; border-radius:12px; background-color:#ff3131; color:#fff; vertical-align:middle;}
+ .visual_h_group .h_coupon {display:inline-block; height:24px; padding:0 8px; border-radius:12px; background-color:#00b160; color:#fff; vertical-align:middle;}
  .visual_h_group b {font-size:13px; line-height:24px; vertical-align:top;}
  .visual_h_group .visual_dsc {color:#0d0d0d; font-size:15px; font-family:"Nanum Gothic", sans-serif;}
+
+ .arrow_group {position:absolute; bottom:32px; left:50%; transform:translatex(-80px);}
+ .arrow_group li {float:left; height:8px; padding:0 6px;}
+ .arrow_group li:after {display:block; overflow:hidden; width:0; height:0; clear:both; content:'';}
+ .arrow_group li a {display:inline-block; width:8px; height:8px;  background-color:#fff; border-radius:50%; text-indent:-9999px;}
+ /*무엇ㅇ이 잘못 일까~~~*/
+ .arrow_group li a:nth-child(2) {background-color:#00b160;}
