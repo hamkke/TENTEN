@@ -65,7 +65,7 @@ body {background-color: antiquewhite;}
 
  /*visual*/
  .container {width:100%;}
- .visual {background:url(../images/mainvisual.jpg) no-repeat;}
+ .visual {position:relative; background:url(../images/mainvisual.jpg) no-repeat;}
  .visual_inner {width:1140px; margin:0 auto;}
  .visual_wrap {position:relative; height:600px; text-align:left;}
  .visual_h_group {position:relative; top:50%; transform:translateY(-72px);}
@@ -80,4 +80,8 @@ body {background-color: antiquewhite;}
  .arrow_group li:after {display:block; overflow:hidden; width:0; height:0; clear:both; content:'';}
  .arrow_group li a {display:inline-block; width:8px; height:8px;  background-color:#fff; border-radius:50%; text-indent:-9999px;}
  /*무엇ㅇ이 잘못 일까~~~*/
- .arrow_group li a:nth-child(2) {background-color:#00b160;}
+ .arrow_group li a:first-child {background-color:#00b160;}
+
+ .visual_btn {position:absolute; top:50%; width:36px; height:72px; background:url(../images/sp_icon.png) no-repeat; text-indent:-9999px;}
+ .prev {left:80px; background-position:0 -110px;; transform:translatey(-31px);}
+ .next {right:80px; background-position:-54px -110px; transform:translatey(-31px);}
