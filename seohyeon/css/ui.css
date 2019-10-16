@@ -11,10 +11,9 @@
 
 
 /*visual*/
-.visual {position:relative; height:600px; background:url('../images/mainvisual1.jpg') no-repeat;}
-.visual .visual_wrap {position:relative; height:600px; text-align:left;}
-.visual_wrap > a {display:block; height:600px;}
-.visual_wrap .visual_h_group {position:absolute; top:50%; margin-top:-74px;}
+.visual {overflow:hidden; position:relative; height:600px;}
+.visual_list li {position:absolute; width:100%;}
+.visual_list li .visual_h_group {position:absolute; top:50%; left:20%;  margin-top:-74px;}
 .visual_h_group .visual_h {display:inline-block; margin-bottom:16px; color:#0d0d0d; font-size:40px;}
 .visual_h span {display:inline-block; position:relative; padding:0 10px; color:#fff; font-size:13px; border-radius:12px; line-height:24px; vertical-align:super;}
 .visual_h_group .h_percent {background-color:#ff3131;}
@@ -30,9 +29,9 @@
 .control_list .control_on a {background-color:#ff3131;}
 .control_list li a {display:inline-block; width:8px; height:8px; border-radius:50%; background-color:#fff;}
 
-.visual_btn {position:absolute; top:50%; width:36px; height:72px; background:url('../images/sp_icon.png') no-repeat; text-indent:-9999px;}
-.prev {left:7%; margin-top:-31px; background-position:0 -110px;}
-.next {right:7%; margin-top:-31px; background-position:-54px -110px;}
+.visual_btn {position:absolute; top:50%; width:36px; height:72px; margin-top:-31px; background:url('../images/sp_icon.png') no-repeat; text-indent:-9999px;}
+.prev {left:7%; background-position:0 -110px;}
+.next {right:7%;  background-position:-54px -110px;}
 
 
 /*timesale*/

@@ -61,6 +61,7 @@
 .lnb_list:first-child li {padding-left:30px;}
 .lnb_list li:hover  {background-color:#f2f2f2;}
 .lnb_list li a {display:inline-block; color:#555; font-size:12px; line-height:26px;}
+.lnb_list li.helloitsme a {color:#000; font-weight:800;}
 
 .lnb_last h2:hover a {text-decoration:underline;}
 .lnb_last h2:hover::after {display:inline-block; overflow:hidden; width:4px; height:6px; margin-left:5px; background:url('../images/arrow_right.png') 0 0 no-repeat; content:'';}
