@@ -56,7 +56,7 @@
 .subright_bottom .prod_list li .ranking {display:inline-block; padding-bottom:20px;}
 
 
-/*sub_gnb_group*/
+/*sub_bottom*/
 .sub_bottom {font-size:0;}
 .sub_bottom .sub_gnb {height:62px; background:url('../images/sub_gnb_bg.png') 0 0 no-repeat;}
 .sub_gnb .sub_gnb_list1 {display:inline-block; vertical-align:top;}
