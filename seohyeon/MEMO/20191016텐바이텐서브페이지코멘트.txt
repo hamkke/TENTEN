@@ -1,0 +1,17 @@
+20191016 코멘트 텐바이텐 서브페이지, 반응형 사이트
+
+1.subleft_list1 에 width를 주는게 아니고 이걸 감싸는 애한테 width를 준다
+  subleft_list1에는 인라인블럭 속성이 필요없다
+  subleft_list1과 subleft_list2 합치자, border는 ::before로 해결
+
+2. subleft_list1과 마찬가지로 sunright_bottom에 width를 주는게 아니라 감싸는 subright한테 width주기
+
+3. label과 input은 span태그로 묶어야 한다
+
+4. prod_list의 a태그는 전체를 감싸야 하는게 아닌 태그마다 링크가 다르기 때문에 수정하기
+
+5. 제이쿼리는 다음 시간에~~~~
+
+6. HOT TOPIK
+
+7.반응형 디테일 페이지 시작, 사이즈는 기본 + 640px + 320px 로 만들기
