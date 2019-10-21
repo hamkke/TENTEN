@@ -11,15 +11,15 @@
 // });
 
 $(document).ready(function(){
-    $('.gnb_list li').mouseover(function(){
-        $(this).addClass('show');
+
+    $('.gnb_list > li > a').mouseover(function(){
+        if(!$(this).parent().hasClass('show')){
+            $('.gnb_list > li').removeClass('show');
+            $(this).parent().addClass('show');
+        }
     });
-    $('.gnb_list li').mouseleave(function(){
-        $('.gnb_list li').removeClass('show');
+
+    $('.gnb_list > li > a').mouseover(function(){
+        
     });
-    if($('.gnb_list li').hasClass('show')){
-        $(this).children('.lnb_group').slideDown(100)
-    }else{
-        $(this).children('.lnb_group').slideUp(100)
-    }
 });
