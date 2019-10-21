@@ -1,0 +1,17 @@
+/* layout */
+.sect-t01{max-width: 1530px;width: 100%;margin: 0 auto;}
+.container{max-width: 1530px;width: 100%;margin: 0 auto;}
+
+/* sp-img */
+.sp{display: inline-block;vertical-align: middle;text-indent: -9999px;}
+.sp.menu{width: 20px;height: 13px;background: url('../images/ico_menu.png') no-repeat;}
+.sp.spot{width: 13px;height: 14px;background: url('../images/ico_spot.png') no-repeat;}
+.sp.twitter-01{width: 13px;height: 14px;background: url('../images/ico_twitter.png') no-repeat;}
+.sp.tumblr-01{width: 13px;height: 14px;background: url('../images/ico_tumblr.png') no-repeat;}
+.sp.facebook-01{width: 13px;height: 14px;background: url('../images/ico_facebook.png') no-repeat;}
+.sp.search-01{width: 13px;height: 14px;background: url('../images/ico_search.png') no-repeat;}
+
+
+/* detail */
+.detail .content{width: 74.5098%;float: left;}
+.detail .aside{width: 23.5294%;float: right;}

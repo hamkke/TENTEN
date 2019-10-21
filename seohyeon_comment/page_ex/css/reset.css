@@ -1,26 +1,37 @@
-/*초기화로 처음 웹페이지를 불러올때 동일한 조건으로 만들어 주는 역할을 함, 향후 유지보수에도 용이함*/
-/* 내가 정리 해둔 리셋
-body,div,p,ul,ol,li,dl,dd,dt,h1,h2,h3,h4,h5,h6,table,tr,th,td,form,fieldset,legend,input,label,textarea,select,button { margin: 0; padding: 0;}
-body,h1,h2,h3,h4,h5,h6 {
-    font-size: 12px;
-    font-family: 돋움",dotum,sans-serif;
-}
-ul, ol, li { list-style: none;}
-img, fieldset { border: none;}
-a { text-decoration: none; color: #333;}
-strong, em { font-weight: normal; font-style: normal;}
-table { border-collapse: collapse;}*/
-/*다룸 reset*/
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
-fieldset,img {border:0 none}
-dl,ul,ol,menu,li {list-style:none}
-blockquote, q {quotes: none}
-blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
-input,select,textarea,button {vertical-align:middle}
-button {border:0 none;background-color:transparent;cursor:pointer}
-body {background:#fff}
-body,th,td,input,select,textarea,button {font-size:12px;font-family: 'Nanum Gothic','돋움',dotum,sans-serif;color:#000;} 
-a {color:#000;text-decoration:none}
-a:active, a:hover {text-decoration:none}
-address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
-img {display:block;}
+/*---------- reset ----------*/
+html {margin: 0; padding: 0; overflow-y: scroll; overflow-x: hidden;}
+body {margin: 0; padding: 0; position: relative; margin: 0; font-family: "nanum-square-r", 'malgunGothic', 'dotum', sans-serif; font-size: 16px; line-height: 1.7; -webkit-text-size-adjust: none;}
+html.bg-grey {background-color: #f4f4f4;}
+header, h1, h2, h3, h4, h5, h6, section, p, ol, ul {margin: 0; padding: 0;}
+button, select, input, textarea {font-family: "nanum-square-r", sans-serif;box-sizing: border-box;}
+button {-moz-appearance: none; -webkit-appearance: none; appearance: none;}
+li {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none; color: inherit;}
+a[href^="tel"] {color: inherit;}
+img {max-width: 100%; height: auto; vertical-align: top; border: 0;}
+em, address {font-style: normal;}
+hr {display: none;}
+button {cursor: pointer; background: transparent; border: 0; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; -webkit-appearance: none; appearance: none;}
+caption {left: -9999px; width: 0.01em; height: 0.01em; font-size: 0.01em; line-height: 0.01em; visibility: hidden; overflow: hidden;}
+
+/*---------- module ----------*/
+/*accessibility */
+.blind, .blind-p, .is_hide_cnt {position: absolute; left: -9999px; display: block; width: 1px; height: 1px; font-size: 0.1em; line-height: 0.01em; text-indent: -9999px; overflow: hidden;}
+.w-hide, .w-hide2, .userDivNone{display: none !important;}
+
+.skipnavi {position: relative; max-width: 1000px; width: 100%; height: 0; margin: 0 auto; z-index: 10000;}
+.skipnavi a {position: absolute; top: -500px; left: 0; display: block; font-size: 1px; text-indent: -10000px; overflow: hidden;}
+.skipnavi a:active, .skipnavi a:focus {position: absolute; top: 0; left: 0; display: block; width: 100%; height: 20px; padding: 5px 0; font-size: 14px; text-align: center; text-indent: 0; color: #fff; background-color: #dd2777; border: 1px solid #cecece;}
+.skip-guide {position: absolute; top: 0; left: 0; font-size: 1px; text-indent: -10000px; overflow: hidden;}
+.skip-guide:active, .skip-guide:focus {position: relative; top: auto; left: auto; display: inline-block; height: 20px; padding: 10px; font-size: 14px; text-align: center; text-indent: 0; color: #fff; background-color: #dd2777; border: 1px solid #cecece; z-index: 100;}
+
+/* clear */
+.clearFix:after {content: ""; clear :both; display: table;}
+
+/* align */
+.f-l {float: left !important;}
+.f-c {float: center !important;}
+.f-r {float: right !important;}
+.a-l {text-align: left !important;}
+.a-c {text-align: center !important;}
+.a-r {text-align: right !important;}

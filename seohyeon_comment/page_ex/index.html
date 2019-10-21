@@ -2,78 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/ui.css">
     <title>Detail-page</title>
 </head>
 <body>
     <!-- [S] Header -->
-    <div class="wrap_header">
-        <div class="header_area">
-            <div class="menu_area">
-                <ul class="menu_lst">
-                    <li><a href="javascript:void(0);">HOME</a></li>
-                    <li><a href="javascript:void(0);">POST TYPES</a></li>
-                    <li><a href="javascript:void(0);">TRAVEL</a></li>
-                    <li><a href="javascript:void(0);">ABOUT</a></li>
-                    <li><a href="javascript:void(0);">CONTACT</a></li>
+    <div class="wrap-header">
+        <div class="h-bg"></div>
+        <section class="sect-t01">
+            <div class="header-area">
+                <div class="menu-area">
+                    <a href="javascript:void(0);" class="btn-menu">
+                        <span class="sp menu"></span>
+                    </a>
+                    <ul class="menu-lst">
+                        <li><a href="javascript:void(0);">HOME</a></li>
+                        <li><a href="javascript:void(0);">POST TYPES</a></li>
+                        <li><a href="javascript:void(0);">TRAVEL</a></li>
+                        <li><a href="javascript:void(0);">ABOUT</a></li>
+                        <li><a href="javascript:void(0);">CONTACT</a></li>
+                    </ul>
+                </div>
+                <h1 class="logo">
+                    <a href="javascript:void(0);" title="DECO BLOG LOGO"><img src="images/h_logo.png" alt="DECO BLOG"></a>
+                </h1>
+                <ul class="util-menu">
+                    <li><a href="javascript:void(0);" title="spot"><span class="sp spot">spot</span></a></li>
+                    <li><a href="javascript:void(0);" title="twitter"><span class="sp twitter-01"></span></a></li>
+                    <li><a href="javascript:void(0);" title="tumblr"><span class="sp tumblr-01"></span></a></li>
+                    <li><a href="javascript:void(0);" title="facebook"><span class="sp facebook-01">facebook</span></a></li>
+                    <li><a href="javascript:void(0);" title="Search"><span class="sp search-01">Search</span></a></li>
                 </ul>
             </div>
-            <div class="logo_area">
-                <h1 class="logo">
-                    <img src="" alt="DECO BLOG">
-                </h1>
+            <!-- [S] visual -->
+            <div class="visual-area">
+                <!-- bxslider 사용예정 slick...? 플러그인 고민중 -->
+                <h2 class="visual-tit">
+                    <span></span>
+                    <strong class="m-tit"></strong>
+                    <span class="test">
+                        <!-- <img src="images/visual_01.png" alt=""> -->
+                    </span>
+                </h2>
+                <a href=""></a>
             </div>
-            <ul class="util-menu">
-                <li><a href="javascript:void(0);" title="spot">spot</a></li>
-                <li><a href="javascript:void(0);" title="twitter">twitter</a></li>
-                <li><a href="javascript:void(0);" title="tumblr">tumblr</a></li>
-                <li><a href="javascript:void(0);" title="facebook">facebook</a></li>
-                <li><a href="javascript:void(0);" title="Search">Search</a></li>
-            </ul>
-        </div>
-        <!-- [S] visual -->
-        <div class="visual_area">
-            <!-- bxslider 사용예정 slick...? 플러그인 고민중 -->
-            <h2 class="visual_tit">
-                <span></span>
-                <strong class="m_tit"></strong>
-            </h2>
-            <a href=""></a>
-        </div>
-        <!-- [E] visual -->
-        <!-- [S] search_area -->
-        <div class="search_area">
-            <h3 class="m_tit"></h3>
-            <div class="int_area">
-                <label for=""></label>
-                <input type="text">
+            <!-- [E] visual -->
+            <!-- [S] search-area -->
+            <div class="search-area">
+                <h3 class="m-tit">
+                    SIGNUP TO<br />
+                    NEWSLETTER
+                </h3>
+                <div class="int-area">
+                    <label for="" class="blind">YOUR NAME</label>
+                    <input type="text" id="" placeholder="YOUR NAME" />
+                </div>
+                <div class="int-area">
+                    <label for="" class="blind">YOUR EMAIL ADDRESS</label>
+                    <input type="text" id="" placeholder="YOUR EMAIL ADDRESS" />
+                </div>
+                <div class="btn-area">
+                    <a href="javascript:void(0);" title="SUBSCRIBE NOW">SUBSCRIBE NOW</a>
+                </div>
             </div>
-            <div class="int_area">
-                <label for=""></label>
-                <input type="text">
-            </div>
-            <div class="btn_area">
-                <a href="javascript:void(0);" title="SUBSCRIBE NOW">SUBSCRIBE NOW</a>
-            </div>
-        </div>
-        <!-- [E] search_area -->
+            <!-- [E] search-area -->
+        </section>
     </div>
     <!-- [E] Header -->
     <!-- [S] container -->
-    <div class="container">
+    <div class="container detail">
         <div class="content">
-            <div class="wrap_post">
-                <div class="bx_img">
-                    <img src="" alt="">
+            <div class="wrap-post">
+                <div class="bx-img">
+                    <!-- <img src="" alt=""> -->
+                    <span class="test2"></span>
                 </div>
-                <div class="bx_desc"></div>
-                <div class="post_footer">
-                    <ul class="user_lst">
+                <div class="bx-desc"></div>
+                <div class="post-footer">
+                    <ul class="user-lst">
                          
                     </ul>
-                    <div class="average_area"></div>
-                    <ul class="site_lst">
+                    <div class="average-area"></div>
+                    <ul class="site-lst">
                         <li><a href="javascript:void(0);" title=""></a></li>
                         <li><a href="javascript:void(0);" title=""></a></li>
                         <li><a href="javascript:void(0);" title=""></a></li>
@@ -82,34 +96,34 @@
                 </div>
             </div>
             <div class="pagination">
-                <a href="" class="btn_prev"></a>
-                <a href="" class="btn_next"></a>
+                <a href="" class="btn-prev"></a>
+                <a href="" class="btn-next"></a>
             </div>
-            <div class="sub_post">
-                <div class="bx_img"></div>
-                <div class="bx_desc">
+            <div class="sub-post">
+                <div class="bx-img"></div>
+                <div class="bx-desc">
                     
                 </div>
             </div>
-            <ul class="sns_lst">
+            <ul class="sns-lst">
                 <li><a href="javascript:void(0);" title=""></a></li>
                 <li><a href="javascript:void(0);" title=""></a></li>
                 <li><a href="javascript:void(0);" title=""></a></li>
                 <li><a href="javascript:void(0);" title=""></a></li>
             </ul>
-            <div class="wrap_recome">
+            <div class="wrap-recome">
                 <!-- bxslider 사용..? -->
             </div>
         </div>
         <aside class="aside">
-            <div class="search_area">
-                <div class="int_area">
+            <div class="search-area">
+                <div class="int-area">
                     <label for=""></label>
                     <input type="text">
                 </div>
-                <div class="side_img big"></div>
-                <div class="bx_catagori">
-                    <ul class="catagori_lst">
+                <div class="side-img big"></div>
+                <div class="bx-catagori">
+                    <ul class="catagori-lst">
                         <li><a href="javascript:void(0);" title=""><span class="count"></span></a></li>
                         <li><a href="javascript:void(0);" title=""><span class="count"></span></a></li>
                         <li><a href="javascript:void(0);" title=""><span class="count"></span></a></li>
@@ -119,20 +133,20 @@
                         <li><a href="javascript:void(0);" title=""><span class="count"></span></a></li>
                     </ul>
                 </div>
-                <div class="side_img small"></div>
-                <div class="bx_last_post">
-                    <ul class="last_post_lst">
+                <div class="side-img small"></div>
+                <div class="bx-last-post">
+                    <ul class="last-post-lst">
                         <li>
                             <a href="javascript:void(0);" title="">
-                                <div class="bx_img"></div>
-                                <h4 class="m_tit"></h4>
+                                <div class="bx-img"></div>
+                                <h4 class="m-tit"></h4>
                                 <span class="date"></span>
-                                <span class="Like_count"></span>
+                                <span class="Like-count"></span>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <ul class="sns_lst">
+                <ul class="sns-lst">
                     <li><a href="javascript:viod(0);"></a></li>
                     <li><a href="javascript:viod(0);"></a></li>
                     <li><a href="javascript:viod(0);"></a></li>
@@ -145,35 +159,35 @@
     </div>
     <!-- [E] container -->
     <!-- [S] footer -->
-    <div class="wrap_footer"> 
-        <div class="blog_area">
+    <div class="wrap-footer"> 
+        <div class="blog-area">
             <p class="desc"></p>
-            <div class="bx_img">
+            <div class="bx-img">
                 <img src="" alt="">
             </div>
         </div>
-        <div class="tweets_area">
-            <ul class="tweets_lst">
+        <div class="tweets-area">
+            <ul class="tweets-lst">
                 <li></li>
             </ul>
         </div>
-        <div class="instargam_area">
-            <ul class="instargam_lst">
+        <div class="instargam-area">
+            <ul class="instargam-lst">
                 <li></li>
                 <li></li>
                 <li></li>
                 <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div class="comment_area">
-            <ul class="comment_lst">
                 <li></li>
                 <li></li>
             </ul>
         </div>
-        <div class="footer_info">
+        <div class="comment-area">
+            <ul class="comment-lst">
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="footer-info">
             <p class="copyright"></p>
         </div>
     </div>
