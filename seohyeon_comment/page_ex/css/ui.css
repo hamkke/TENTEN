@@ -15,8 +15,8 @@
 .util-menu li{display: inline-block;}
 .util-menu > li > a{display: inline-block;width: 56px;height: 56px;text-align: center;}
 
-.test{display: block;width: 1530px;height: 580px;background-color: gray;}
-.test2{display: block;width: 1140px;height: 488px;background-color: gray;}
+.test{display: block;max-width: 1530px;height: 580px;background-color: gray;}
+.test2{display: block;max-width: 1140px;height: 488px;background-color: gray;}
 
 .search-area{margin-top: 37px;padding-left: 0.9607%;font-size: 0;}
 .search-area .m-tit{display: inline-block;margin-right: 1.6601%;font-weight: bold;font-size: 28px;letter-spacing: 0.2em;line-height: 28px;vertical-align: middle;}
