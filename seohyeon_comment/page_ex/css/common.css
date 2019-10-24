@@ -30,7 +30,7 @@
 /* detail */
 .detail .content{width: 74.5098%;float: left;}
 /* .detail .content{float: left;max-width: 1140px;width: 100%;} */
-.detail .aside{width: 23.5294%;float: right;}
+.detail .aside{width: 23.5294%;float: right;padding: 0 30px;border: 1px solid red;box-sizing: border-box;}
 /* .detail .aside{float: right;max-width: 360px;width: 100%;padding: 0 30px;border: 1px solid red;box-sizing: border-box;} */
 
 
