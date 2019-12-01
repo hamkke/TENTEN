@@ -15,7 +15,7 @@
 .nav {background-color:#fff;}
 .nav > .inner_content {height:90px;}
 
-.logo {overflow:hidden; position:absolute; top:8px; width:182px; height:66px;}
+.logo {position:absolute; top:30px; width:160px; height:28px;}
 .logo a {display:block;}
 
 .nav_top {text-align:right;}
