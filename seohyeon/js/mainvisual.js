@@ -105,4 +105,4 @@ function slide() {
 
 slide();
 
-// setInterval(moveSlide, 1000);
+setInterval(moveSlide, 1000);
