@@ -7,21 +7,21 @@ const prevBtn = document.querySelector('.visual_prev'); // prev button
 const firstDot = document.querySelector(".indicator_list li:first-child");
 const lastDot = document.querySelector(".indicator_list li:last-child");
 const track = document.querySelector(".visual_list");
-const slides = Array.from(track.children);
+const slides = document.querySelectorAll('.visual_list li');
 const dotNav = document.querySelector(".indicator_list");
-const dots = Array.from(dotNav.children);
+const dots = document.querySelectorAll('.indicator_list li');
 
 firstSlide.classList.add(showClass);
 firstDot.classList.add(actClass);
 
 function moveSlide() {
-    const curSlide = document.querySelector(`.${showClass}`)
-    const curDot = document.querySelector(`.${actClass}`)
+    var curSlide = document.querySelector('.show')
+    var curDot = document.querySelector('.active')
     if (curSlide) {
         curSlide.classList.remove(showClass);
         curDot.classList.remove(actClass);
-        const nextSlide= curSlide.nextElementSibling;
-        const nextDot= curDot.nextElementSibling;
+        var nextSlide= curSlide.nextElementSibling;
+        var nextDot= curDot.nextElementSibling;
         if (nextSlide) {
             nextSlide.classList.add(showClass);
             nextDot.classList.add(actClass);
@@ -38,8 +38,8 @@ function moveSlide() {
 function slide() {
     nextBtn.addEventListener('click', function(){
         event.preventDefault();
-        const curSlide = document.querySelector(`.${showClass}`)
-        const curDot = document.querySelector(`.${actClass}`)
+        var curSlide = document.querySelector('.show')
+        var curDot = document.querySelector('.active')
         if(curSlide) {
             curSlide.classList.remove(showClass);
             curDot.classList.remove(actClass);
@@ -56,12 +56,12 @@ function slide() {
             firstSlide.classList.add(showClass);
             firstDot.classList.add(actClass);
         }
-});
+    });
 
     prevBtn.addEventListener('click', function(){
         event.preventDefault();
-        const curSlide = document.querySelector(`.${showClass}`)
-        const curDot = document.querySelector(`.${actClass}`)
+        var curSlide = document.querySelector('.show')
+        var curDot = document.querySelector('.active')
         if(curSlide) {
             curSlide.classList.remove(showClass);
             curDot.classList.remove(actClass);
@@ -79,26 +79,30 @@ function slide() {
             prevDot.classList.add(actClass);
         }
    
-});
+    });
 
-dotNav.addEventListener("click", e => {
-    event.preventDefault();
-    const onDot = e.target.closest("li");
-    const onIndex = dots.findIndex(dots => dots === onDot);
-    const onSlide = slides[onIndex];
-        
-    const curSlide = document.querySelector(`.${showClass}`);     
-    const curDot = document.querySelector(`.${actClass}`);         
 
-    if (onSlide && curSlide) {
-        curSlide.classList.remove(showClass);
-        curDot.classList.remove(actClass);
-        onSlide.classList.add(showClass);
-        onDot.classList.add(actClass);
-    } 
-});
+    var li_click = function(idx){
+        dots[idx].addEventListener('click', function(){
+            if(!dots[idx].classList.add(actClass)){
+                for(var i=0;i<dots.length;i++){
+                    dots[i].classList.remove(actClass);
+                    slides[i].classList.remove(showClass);
+                }
+                dots[idx].classList.add(actClass);
+                slides[idx].classList.add(showClass);
+            } else {
+                dots[idx].classList.remove(actClass);
+                slides[idx].classList.remove(showClass);
+            }
+        });
+    }
+
+    for(var i=0; i<dots.length; i++){
+        li_click(i);  
+    }
 };
 
 slide();
 
-// setInterval(moveSlide, 7500);
+// setInterval(moveSlide, 1000);

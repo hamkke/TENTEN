@@ -1,16 +1,10 @@
 /*prod_list*/
 .prod_list li {display:inline-block; text-align:center;}
-.prod_list li a {display:block;}
-.prod_list li .prod_thmb:hover {
-    content:url('../images/sublist_hover.jpg');
-    animation-name:thmb_hover;
-    animation-duration: 0.4s;
-    animation-timing-function:ease;
-}
-@keyframes thmb_hover {
-    0% {opacity:0.6;}
-    100% {opacity:1;}
-}
+.prod_list li a {display:block; position:relative;}
+.prod_list li .prod_thmb {width:240px; background:url(../images/sublist.jpg); height:227px;}
+.prod_list li .prod_thmb_hover {position:absolute; top:0; left:0; opacity:0; transition: opacity 0.2s ease-in-out;}
+.prod_list li .prod_thmb_hover:hover {opacity:1 !important;}
+
 .prod_list .prod_desc {padding-top:18px; line-height:20px;}
 .prod_desc h5 {color:#b2b2b2; font-size:11px; text-decoration:underline;}
 .prod_desc h6 {padding-top:5px; color:#555; font-size:11px;}
