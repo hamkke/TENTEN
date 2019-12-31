@@ -127,7 +127,7 @@
 .tab_gnb a span {position:relative; color:#666;}
 .tab_gnb a:last-child span {margin-left:16px;}
 .tab_gnb a span:hover {color:#000; font-weight:800;}
-.tab_gnb a span:hover::after {position:absolute; left:0; bottom:-12px; width:100%; height:4px; background-color:#3f75ff; content:'';}
+.tab_gnb a span:hover::after {position:absolute; left:0; bottom:-12px; width:100%; height:4px; background-color:#ff3131; content:'';}
 .cart_right .tab_list {font-size:0; margin-left:76px; text-align:left;}
 .tab_list li {display:inline-block; overflow:hidden; position:relative; margin:20px; width:180px; font-size:12px;}
 .tab_list li:nth-child(4n) {margin:20px 0 20px 20px;}
@@ -153,7 +153,7 @@
 .only_h a + a {margin-left:16px;}
 .only_h a span {position:relative; padding-bottom:8px; color:#666; font-size:12px;}
 .only_h a span:hover {color:#000; font-weight:800;}
-.only_h a span:hover::after {position:absolute; left:0; bottom:0; width:100%; height:4px; background-color:#3f75ff; content:'';} 
+.only_h a span:hover::after {position:absolute; left:0; bottom:0; width:100%; height:4px; background-color:#ff3131; content:'';} 
 .only_left .only_img {padding:15px 0 20px; width:540px;}
 
 .only_thmb .thmb_list {font-size:0}
