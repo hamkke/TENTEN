@@ -85,4 +85,4 @@ function slide() {
 };
 
 slide();
-// setInterval(moveSlide, 5000);
+setInterval(moveSlide, 2000);
