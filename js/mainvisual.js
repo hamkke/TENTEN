@@ -15,13 +15,13 @@ firstSlide.classList.add(showClass);
 firstDot.classList.add(actClass);
 
 function moveSlide() {
-    var curSlide = document.querySelector('.show')
-    var curDot = document.querySelector('.active')
+    const curSlide = document.querySelector('.show')
+    const curDot = document.querySelector('.active')
     if (curSlide) {
         curSlide.classList.remove(showClass);
         curDot.classList.remove(actClass);
-        var nextSlide= curSlide.nextElementSibling;
-        var nextDot= curDot.nextElementSibling;
+        const nextSlide= curSlide.nextElementSibling;
+        const nextDot= curDot.nextElementSibling;
         if (nextSlide) {
             nextSlide.classList.add(showClass);
             nextDot.classList.add(actClass);
@@ -38,30 +38,13 @@ function moveSlide() {
 function slide() {
     nextBtn.addEventListener('click', function(){
         event.preventDefault();
-        var curSlide = document.querySelector('.show')
-        var curDot = document.querySelector('.active')
-        if(curSlide) {
-            curSlide.classList.remove(showClass);
-            curDot.classList.remove(actClass);
-            const nextSlide= curSlide.nextElementSibling;
-            const nextDot= curDot.nextElementSibling;
-            if(nextSlide) {
-                nextSlide.classList.add(showClass);
-                nextDot.classList.add(actClass);
-            } else {
-                firstSlide.classList.add(showClass);
-                firstDot.classList.add(actClass);    
-            }
-        } else {
-            firstSlide.classList.add(showClass);
-            firstDot.classList.add(actClass);
-        }
+        moveSlide();
     });
 
     prevBtn.addEventListener('click', function(){
         event.preventDefault();
-        var curSlide = document.querySelector('.show')
-        var curDot = document.querySelector('.active')
+        const curSlide = document.querySelector('.show')
+        const curDot = document.querySelector('.active')
         if(curSlide) {
             curSlide.classList.remove(showClass);
             curDot.classList.remove(actClass);
@@ -78,17 +61,15 @@ function slide() {
             lastSlide.classList.add(showClass);
             prevDot.classList.add(actClass);
         }
-   
     });
-
 
     var li_click = function(idx){
         dots[idx].addEventListener('click', function(){
+            const curSlide = document.querySelector('.show');
+            const curDot = document.querySelector('.active');
+            curDot.classList.remove(actClass);
+            curSlide.classList.remove(showClass);
             if(!dots[idx].classList.add(actClass)){
-                for(var i=0;i<dots.length;i++){
-                    dots[i].classList.remove(actClass);
-                    slides[i].classList.remove(showClass);
-                }
                 dots[idx].classList.add(actClass);
                 slides[idx].classList.add(showClass);
             } else {
@@ -104,5 +85,4 @@ function slide() {
 };
 
 slide();
-
-setInterval(moveSlide, 1000);
+// setInterval(moveSlide, 5000);
